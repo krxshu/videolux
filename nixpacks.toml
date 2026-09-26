@@ -1,11 +1,5 @@
 [build]
-nixpkgs = ["nodejs", "ffmpeg"]
-
-[build.buildDependencies]
-nixpkgs = ["pkg-config"]
-
-[phases.setup]
-dependsOn = ["base"]
+nixpkgs = ["nodejs"]
 
 [phases.build]
 cmds = [
@@ -15,3 +9,4 @@ cmds = [
 
 [start]
 cmd = "cd backend && npm start"
+
