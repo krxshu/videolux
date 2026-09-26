@@ -1,0 +1,13 @@
+{
+  "name": "videolux-ai",
+  "version": "1.0.0",
+  "description": "VIDEOLUX AI - Full-stack video enhancement with FFmpeg",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "dev": "echo 'Use individual dev scripts in backend/ and frontend/ folders'"
+  }
+}
